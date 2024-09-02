@@ -1,0 +1,868 @@
+{
+  "mod_elements": [
+    {
+      "name": "MinceraftBlocks",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minceraft_blocks",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BucketOfSemen",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bucket_of_semen",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/fluid/types/BucketOfSemenFluidType.java",
+          "src/main/java/com/opaa/minceraft/item/BucketOfSemenItem.java",
+          "src/main/java/com/opaa/minceraft/block/BucketOfSemenBlock.java",
+          "src/main/resources/assets/minceraft/models/item/bucket_of_semen_bucket.json",
+          "src/main/resources/assets/minceraft/models/block/bucket_of_semen.json",
+          "src/main/java/com/opaa/minceraft/fluid/BucketOfSemenFluid.java",
+          "src/main/resources/assets/minceraft/blockstates/bucket_of_semen.json"
+        ]
+      }
+    },
+    {
+      "name": "Steve",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steve",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minceraft/models/item/steve_spawn_egg.json",
+          "src/main/java/com/opaa/minceraft/client/renderer/SteveRenderer.java",
+          "src/main/java/com/opaa/minceraft/entity/SteveEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "KillButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_button",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/procedures/KillButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TurnToSteve",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turn_to_steve",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/procedures/TurnToSteveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DumbSteve",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steveminceraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minceraft/models/item/steveminceraft_spawn_egg.json",
+          "src/main/java/com/opaa/minceraft/entity/DumbSteveEntity.java",
+          "src/main/resources/data/minceraft/neoforge/biome_modifier/steveminceraft_biome_modifier.json",
+          "src/main/java/com/opaa/minceraft/client/renderer/DumbSteveRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Herobrinium",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herobrinium",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/item/HerobriniumItem.java",
+          "src/main/resources/assets/minceraft/models/item/herobrinium.json"
+        ]
+      }
+    },
+    {
+      "name": "PurePower",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_power",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/block/PurePowerBlock.java",
+          "src/main/resources/assets/minceraft/blockstates/pure_power.json",
+          "src/main/resources/assets/minceraft/models/block/pure_power.json",
+          "src/main/resources/assets/minceraft/models/item/pure_power.json",
+          "src/main/resources/data/minceraft/loot_tables/blocks/pure_power.json"
+        ]
+      }
+    },
+    {
+      "name": "Savior",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savior",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/advancements/savior.json"
+        ]
+      }
+    },
+    {
+      "name": "MakeOP",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "make_op",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/recipes/make_op.json"
+        ]
+      }
+    },
+    {
+      "name": "MysterySoil",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystery_soil",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/loot_tables/blocks/mystery_soil.json",
+          "src/main/resources/assets/minceraft/blockstates/mystery_soil.json",
+          "src/main/java/com/opaa/minceraft/block/MysterySoilBlock.java",
+          "src/main/resources/assets/minceraft/models/item/mystery_soil.json",
+          "src/main/resources/assets/minceraft/models/block/mystery_soil.json"
+        ]
+      }
+    },
+    {
+      "name": "Mystery",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystery",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/dimension/mystery.json",
+          "src/main/resources/data/minceraft/dimension_type/mystery.json",
+          "src/main/resources/assets/minceraft/models/block/mystery_portal_ns.json",
+          "src/main/java/com/opaa/minceraft/item/MysteryItem.java",
+          "src/main/java/com/opaa/minceraft/world/teleporter/MysteryTeleporter.java",
+          "src/main/resources/assets/minceraft/blockstates/mystery_portal.json",
+          "src/main/java/com/opaa/minceraft/block/MysteryPortalBlock.java",
+          "src/main/resources/assets/minceraft/models/item/mystery.json",
+          "src/main/resources/assets/minceraft/models/block/mystery_portal_ew.json",
+          "src/main/java/com/opaa/minceraft/world/dimension/MysteryDimension.java",
+          "src/main/java/com/opaa/minceraft/world/teleporter/MysteryPortalShape.java"
+        ]
+      }
+    },
+    {
+      "name": "MysteryPortalTriggerUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystery_portal_trigger_used",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/procedures/MysteryPortalTriggerUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WeedLeaf",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weed_leaf",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minceraft/models/item/weed_leaf.json",
+          "src/main/java/com/opaa/minceraft/item/WeedLeafItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Weed",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weed",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minceraft/models/item/weed.json",
+          "src/main/resources/data/minceraft/neoforge/biome_modifier/weed_biome_modifier.json",
+          "src/main/resources/assets/minceraft/blockstates/weed.json",
+          "src/main/java/com/opaa/minceraft/block/WeedBlock.java",
+          "src/main/resources/data/minceraft/worldgen/placed_feature/weed.json",
+          "src/main/resources/assets/minceraft/models/block/weed.json",
+          "src/main/resources/data/minceraft/worldgen/configured_feature/weed.json",
+          "src/main/resources/data/minceraft/loot_tables/blocks/weed.json"
+        ]
+      }
+    },
+    {
+      "name": "MysterB",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myster_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/worldgen/placed_feature/myster_b_tree.json",
+          "src/main/resources/data/minceraft/worldgen/configured_feature/myster_b_tree.json",
+          "src/main/resources/data/minceraft/worldgen/biome/myster_b.json"
+        ]
+      }
+    },
+    {
+      "name": "GBDisc",
+      "type": "musicdisc",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gb_disc",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/item/GBDiscItem.java",
+          "src/main/resources/assets/minceraft/models/item/gb_disc.json"
+        ]
+      }
+    },
+    {
+      "name": "Jointrec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jointrec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/recipes/jointrec.json"
+        ]
+      }
+    },
+    {
+      "name": "Joint",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "joint",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minceraft/models/item/joint.json",
+          "src/main/java/com/opaa/minceraft/item/JointItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Weedsmoke",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weedsmoke",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/procedures/WeedsmokeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WithdrawlEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withdrawl_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/procedures/WithdrawlEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Withdrawl",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withdrawl",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/potion/WithdrawlMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Jointwaste",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jointwaste",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/item/JointwasteItem.java",
+          "src/main/resources/assets/minceraft/models/item/jointwaste.json"
+        ]
+      }
+    },
+    {
+      "name": "SteveOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steve_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/procedures/SteveOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GibThom",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gib_thom",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Woodenblox",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "woodenblox",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minceraft/models/block/woodenblox.json",
+          "src/main/resources/data/minceraft/loot_tables/blocks/woodenblox.json",
+          "src/main/resources/assets/minceraft/models/item/woodenblox.json",
+          "src/main/java/com/opaa/minceraft/block/WoodenbloxBlock.java",
+          "src/main/resources/assets/minceraft/blockstates/woodenblox.json"
+        ]
+      }
+    },
+    {
+      "name": "MysterLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myster_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minceraft/models/block/myster_leaves.json",
+          "src/main/resources/assets/minceraft/models/item/myster_leaves.json",
+          "src/main/java/com/opaa/minceraft/block/MysterLeavesBlock.java",
+          "src/main/resources/data/minceraft/loot_tables/blocks/myster_leaves.json",
+          "src/main/resources/assets/minceraft/blockstates/myster_leaves.json"
+        ]
+      }
+    },
+    {
+      "name": "PlankMystery",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plank_mystery",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minceraft/models/block/plank_mystery.json",
+          "src/main/java/com/opaa/minceraft/block/PlankMysteryBlock.java",
+          "src/main/resources/data/minceraft/loot_tables/blocks/plank_mystery.json",
+          "src/main/resources/assets/minceraft/blockstates/plank_mystery.json",
+          "src/main/resources/assets/minceraft/models/item/plank_mystery.json"
+        ]
+      }
+    },
+    {
+      "name": "Plankcraftwoo",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plankcraftwoo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/recipes/plankcraftwoo.json"
+        ]
+      }
+    },
+    {
+      "name": "Stik",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stik",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/recipes/stik.json"
+        ]
+      }
+    },
+    {
+      "name": "Grinder",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grinder",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/loot_tables/blocks/grinder.json",
+          "src/main/java/com/opaa/minceraft/block/GrinderBlock.java",
+          "src/main/resources/assets/minceraft/models/item/grinder.json",
+          "src/main/resources/assets/minceraft/models/block/grinder.json",
+          "src/main/resources/assets/minceraft/blockstates/grinder.json"
+        ]
+      }
+    },
+    {
+      "name": "Squidwards",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squidwards",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/entity/SquidwardsEntity.java",
+          "src/main/java/com/opaa/minceraft/client/renderer/SquidwardsRenderer.java",
+          "src/main/resources/data/minceraft/neoforge/biome_modifier/squidwards_biome_modifier.json",
+          "src/main/resources/assets/minceraft/models/item/squidwards_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "MakePlanksUseful",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "make_planks_useful",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/recipes/make_planks_useful.json"
+        ]
+      }
+    },
+    {
+      "name": "GoofyFruit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goofy_fruit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minceraft/models/item/goofy_fruit.json",
+          "src/main/java/com/opaa/minceraft/item/GoofyFruitItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Grinding",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grinding",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Hrmm",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hrmm",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Doorzlol",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doorzlol",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minceraft/models/block/doorzlol_bottom_right.json",
+          "src/main/resources/assets/minceraft/models/block/doorzlol_bottom_right_open.json",
+          "src/main/resources/assets/minceraft/blockstates/doorzlol.json",
+          "src/main/resources/assets/minceraft/models/block/doorzlol_bottom_left.json",
+          "src/main/resources/assets/minceraft/models/block/doorzlol_top_left.json",
+          "src/main/resources/assets/minceraft/models/block/doorzlol_top_left_open.json",
+          "src/main/resources/assets/minceraft/models/item/doorzlol.json",
+          "src/main/resources/assets/minceraft/models/block/doorzlol_top_right_open.json",
+          "src/main/resources/data/minceraft/loot_tables/blocks/doorzlol.json",
+          "src/main/java/com/opaa/minceraft/block/DoorzlolBlock.java",
+          "src/main/resources/assets/minceraft/models/block/doorzlol_bottom_left_open.json",
+          "src/main/resources/assets/minceraft/models/block/doorzlol_top_right.json"
+        ]
+      }
+    },
+    {
+      "name": "HrmmHa",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hrmm_ha",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/worldgen/structure/hrmm_ha.json",
+          "src/main/resources/data/minceraft/worldgen/template_pool/hrmm_ha.json",
+          "src/main/resources/data/minceraft/worldgen/structure_set/hrmm_ha.json"
+        ]
+      }
+    },
+    {
+      "name": "Portalz",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portalz",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/worldgen/structure/portalz.json",
+          "src/main/resources/data/minceraft/worldgen/structure_set/portalz.json",
+          "src/main/resources/data/minceraft/worldgen/template_pool/portalz.json"
+        ]
+      }
+    },
+    {
+      "name": "Testing",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minceraft/blockstates/testing.json",
+          "src/main/resources/assets/minceraft/models/block/testing.json",
+          "src/main/resources/data/minceraft/loot_tables/blocks/testing.json",
+          "src/main/java/com/opaa/minceraft/block/TestingBlock.java",
+          "src/main/resources/assets/minceraft/models/item/testing.json"
+        ]
+      }
+    },
+    {
+      "name": "KillKnife",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_knife",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/item/KillKnifeItem.java",
+          "src/main/resources/assets/minceraft/models/item/kill_knife.json"
+        ]
+      }
+    },
+    {
+      "name": "StoneRock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_rock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/loot_tables/blocks/stone_rock.json",
+          "src/main/resources/assets/minceraft/models/block/stone_rock.json",
+          "src/main/java/com/opaa/minceraft/block/StoneRockBlock.java",
+          "src/main/resources/assets/minceraft/models/item/stone_rock.json",
+          "src/main/resources/assets/minceraft/blockstates/stone_rock.json"
+        ]
+      }
+    },
+    {
+      "name": "Dustx",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dustx",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/recipes/dustx.json"
+        ]
+      }
+    },
+    {
+      "name": "Gems",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gems",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minceraft/worldgen/configured_feature/gems.json",
+          "src/main/resources/data/minceraft/worldgen/placed_feature/gems.json",
+          "src/main/resources/assets/minceraft/models/item/gems.json",
+          "src/main/java/com/opaa/minceraft/block/GemsBlock.java",
+          "src/main/resources/data/minceraft/neoforge/biome_modifier/gems_biome_modifier.json",
+          "src/main/resources/data/minceraft/loot_tables/blocks/gems.json",
+          "src/main/resources/assets/minceraft/models/block/gems.json",
+          "src/main/resources/assets/minceraft/blockstates/gems.json"
+        ]
+      }
+    },
+    {
+      "name": "Scalamite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scalamite",
+      "metadata": {
+        "files": [
+          "src/main/java/com/opaa/minceraft/item/ScalamiteItem.java",
+          "src/main/resources/assets/minceraft/models/item/scalamite.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "oof",
+      "files": [
+        "classic_hurt"
+      ],
+      "category": "player",
+      "subtitle": "Steve dies"
+    },
+    {
+      "name": "gibthom",
+      "files": [
+        "tomp3.cc_-_love_note_database",
+        "youtube_0m-bcgtmrw0_audio",
+        "youtube_7j0-o4su72y_audio"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "bip_gib",
+      "files": [
+        "tomp3.cc_-_lil_nucleus_bip_bip_bip_gib_gib_gib_official_audio"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "herobrinetheme",
+      "files": [
+        "herobrine"
+      ],
+      "category": "music",
+      "subtitle": "Herobrine summoned"
+    }
+  ],
+  "tag_elements": {
+    "BIOMES:minecraft:has_structure/stronghold": [
+      "~CUSTOM:MysterB"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:Weed",
+      "~CUSTOM:BucketOfSemen"
+    ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:PurePower"
+    ],
+    "BIOMES:minecraft:has_structure/pillager_outpost": [
+      "~CUSTOM:MysterB"
+    ],
+    "ENTITIES:minecraft:undead": [
+      "~CUSTOM:Steve"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:StoneRock",
+      "~CUSTOM:MysterySoil"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:GBDisc"
+    ],
+    "BIOMES:minecraft:is_overworld": [],
+    "BIOMES:minecraft:has_structure/woodland_mansion": [
+      "~CUSTOM:MysterB"
+    ],
+    "BLOCKS:minecraft:logs": [
+      "CUSTOM:Woodenblox"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "CUSTOM:MysterLeaves"
+    ],
+    "BLOCKS:minecraft:dirt": [
+      "CUSTOM:MysterySoil"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Gems",
+      "~CUSTOM:StoneRock",
+      "~CUSTOM:Grinder",
+      "~CUSTOM:PurePower"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:KillKnife"
+    ],
+    "BIOMES:minecraft:has_structure/village_plains": [
+      "~CUSTOM:MysterB"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "entity.minceraft.steveminceraft": "Steve",
+      "item.minceraft.bucket_of_semen_bucket": "Semen Bucket",
+      "item.minceraft.steve_spawn_egg": "Herobrine Spawn Egg",
+      "item.minceraft.kill_knife": "Kill Knife",
+      "item_group.minceraft.minceraft_blocks": "Minceraft Blocks",
+      "block.minceraft.myster_leaves": "Mystery Leaves",
+      "item.minceraft.gb_disc": "Music Disc",
+      "fluid.minceraft.bucket_of_semen": "Bucket of Semen",
+      "item.minceraft.herobrinium": "Herobrinium",
+      "item.minceraft.mystery": "Portal Dust",
+      "block.minceraft.pure_power": "Pure Power",
+      "block.minceraft.doorzlol": "Mystery Door",
+      "block.minceraft.plank_mystery": "Mystery Planks",
+      "painting.minceraft.gib_thom.title": "YouTube PFP",
+      "painting.minceraft.gib_thom.author": "GibThom",
+      "effect.minceraft.withdrawl": "Withdrawl",
+      "block.minceraft.weed": "Weed",
+      "item.minceraft.steveminceraft_spawn_egg": "Steve Spawn Egg",
+      "block.minceraft.woodenblox": "Mystery Wood",
+      "block.minceraft.mystery_soil": "Mystery Soil",
+      "block.minceraft.grinder": "Grinder",
+      "item.minceraft.goofy_fruit": "Goofy Fruit",
+      "item.minceraft.jointwaste": "Joint Waste",
+      "item.minceraft.weed_leaf": "Weed Leaf",
+      "advancements.savior.descr": "Welcome to weirdness.",
+      "item.minceraft.gb_disc.desc": "Lil Nucleus - Bip Bip Bip, Gib Gib Gib",
+      "block.minceraft.gems": "Scalamite Ore",
+      "entity.minceraft.steve": "Herobrine",
+      "block.minceraft.testing": "Goo Glass",
+      "subtitles.oof": "Steve dies",
+      "item.minceraft.squidwards_spawn_egg": "Squidward Villager Spawn Egg",
+      "entity.minecraft.villager.minceraft.grinding": "Dealer",
+      "item.minceraft.scalamite": "Scalamite",
+      "item.minceraft.joint": "Joint",
+      "subtitles.herobrinetheme": "Herobrine summoned",
+      "advancements.savior.title": "MinCEraft",
+      "subtitles.bip_gib": "",
+      "entity.minceraft.squidwards": "Squidward Villager",
+      "block.minceraft.stone_rock": "Mystery Rocks",
+      "subtitles.gibthom": "",
+      "biome.minceraft.myster_b": "Mr. E",
+      "block.minceraft.bucket_of_semen": "Bucket of Semen"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "minceraft",
+    "modName": "MinCEraft",
+    "version": "0.1.0",
+    "description": "Make your minecraft world cursed",
+    "author": "August Dominici (12opaa201)",
+    "websiteURL": "https://12opaadownloads.neocities.org/",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "modPicture": "grass_block_side",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.20.6",
+    "credits": "12opaa201, compiled and created with MCreator",
+    "modElementsPackage": "com.opaa.minceraft"
+  },
+  "mcreatorVersion": 202400232117
+}
